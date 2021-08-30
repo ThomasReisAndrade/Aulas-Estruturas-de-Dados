@@ -7,6 +7,7 @@ public class ListaApp {
         l.inserirFinalRec(3);
         l.inserirInicio(9);
         l.imprimir(); // 9 5 6 3 
+        //testecommit;
         
         /*
         if(l.removerElemento(6)) {
