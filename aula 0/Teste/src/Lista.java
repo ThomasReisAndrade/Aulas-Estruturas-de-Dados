@@ -122,6 +122,18 @@ public class Lista {
     } // fim else
   } // fim metodo encontrarElemento()
   
+  public boolean encontrarElementoRec(int valor) {
+	    if(inicio == null) return false;
+	    else {
+	      No tmp = inicio;
+	      
+	          if(tmp.getValor() == valor) return true;
+	          tmp = tmp.getProx();
+	      
+	      return false;
+	    } 
+	  } 
+  
   private No encontrarElementoPrivado(int valor){
     if(inicio == null) return null;
     else {
