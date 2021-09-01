@@ -124,8 +124,8 @@ public class Lista {
   
   public boolean encontrarElementoRec(No tmp, int valor) {
 	        if(tmp.getValor() == valor) return true;
-            if(tmp.getProx() == null) return false;
-            encontrarElementoRec(tmp.getProx(), valor);
+            if(tmp.getProx() != null) encontrarElementoRec(tmp.getProx(), valor);
+            return false;
   }
   
   private No encontrarElementoPrivado(int valor){
