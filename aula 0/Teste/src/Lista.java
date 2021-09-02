@@ -140,6 +140,13 @@ public class Lista {
     } // fim else
   }
   
+  public boolean removerElementoRec(No tmp,int valor) {
+	  if(tmp.setProx() == valor) return true;
+      if(tmp.getProx() != null) removerElementoRec(tmp.getProx(), valor);
+      return false;
+	  
+  }
+  
   public boolean removerElemento(int valor) {
       No tmp = encontrarElementoPrivado(valor);
       if(tmp == null) return false;
