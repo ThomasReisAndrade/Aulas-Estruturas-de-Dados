@@ -6,7 +6,7 @@ public class ListaApp {
         l.inserirFinalRec(6);
         l.inserirFinalRec(3);
         l.inserirInicio(9);
-        System.out.println(l.encontrarElementoRec(l.inicio,3));
+        System.out.println(l.encontrarElementoRec(l.getInicio(),3));
 
         l.imprimir(); // 9 5 6 3 
         //testecommit;
